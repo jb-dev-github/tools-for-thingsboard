@@ -1,0 +1,28 @@
+<!-- Copy this html code to your HTML Widget -->
+<!-- This code only show a content of another webpage embeded in the widget,
+so we are displaying the pure video URL, for our video stream purpose.
+-->
+
+<html>
+
+<!-- Put your video stream URL here in "img" tag below: -->
+<img src="http://192.168.0.106:8080/photo.jpg" id="img" height="80%">
+<a href="#" onClick="return reloadImg('img');">Reload Image</a>
+
+<script>
+function reloadImg(id) {
+   var obj = document.getElementById(id);
+   var src = obj.src;
+   var pos = src.indexOf('?');
+   if (pos >= 0) {
+      src = src.substr(0, pos);
+   }
+   var date = new Date();
+   obj.src = src + '?v=' + date.getTime();
+   return false;
+}
+</script>
+  
+
+
+</html>
