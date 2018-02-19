@@ -1,12 +1,16 @@
-<!-- Copy this html code to your HTML Widget -->
-<!-- This code only show a content of another webpage embeded in the widget,
-so we are displaying the pure video URL, for our video stream purpose.
+
+<!-- This code tries to display a image, if the source file is not present, it tries to load an error default image from other source, it also has a link to reload the image manually.
 -->
 
 <html>
 
-<!-- Put your video stream URL here in "img" tag below: -->
-<img src="http://192.168.0.106:8080/photo.jpg" id="img" height="80%">
+<!-- Copy this html block into your HTML Widget settings -->
+
+
+<!-- Only replace the src and onerror fields: -->
+<img id='img' src="URL OF IMAGE TO DISPLAY" onerror="this.src='URL OF ERROR DEFAULT IMAGE, IN CASE OF MISSING IMAGE';" height="80%" align="middle"/>
+
+<br />
 <a href="#" onClick="return reloadImg('img');">Reload Image</a>
 
 <script>
