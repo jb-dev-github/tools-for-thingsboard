@@ -1,0 +1,48 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "cards",
+    "typeAlias": "html_card",
+    "type": "static",
+    "title": "New widget",
+    "sizeX": 7,
+    "sizeY": 6,
+    "config": {
+      "datasources": [],
+      "timewindow": {
+        "realtime": {
+          "timewindowMs": 60000
+        }
+      },
+      "showTitle": true,
+      "backgroundColor": "#1e1e1e00",
+      "color": "rgba(254, 254, 254, 0.87)",
+      "padding": "8px",
+      "settings": {
+        "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}",
+        "cardHtml": "<!-- Copy this html code to your HTML Widget -->\n<!-- This code only show a content of another webpage embeded in the widget,\nso we are displaying the pure video URL, for our video stream purpose.\n-->\n\n<html>\n\n<iframe id=\"video-src\"\n    title=\"Video stream from IP Webcam server\"\n    width=\"100%\"\n    height=\"100%\"\n    frameborder=\"0\"\n    scrolling=\"no\"\n    marginheight=\"0\"\n    marginwidth=\"0\"\n    align=\"middle\"\n    \n    src=\"http://localhost:8080/video\"> <!-- Replace with your video stream URL here in \"src\", by default IP Webcam application puts video stream at \"/video\" --> \n\n\n\n</html>"
+      },
+      "title": "Video stream:",
+      "dropShadow": false,
+      "enableFullscreen": false,
+      "widgetStyle": {},
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400
+      },
+      "useDashboardTimewindow": true,
+      "showLegend": false,
+      "actions": {}
+    },
+    "id": "c3ec19c4-544d-3e5a-7e26-45a1b6ffab75"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {},
+    "targetDeviceAliases": {}
+  },
+  "originalSize": {
+    "sizeX": 7,
+    "sizeY": 6
+  },
+  "originalColumns": 24
+}
