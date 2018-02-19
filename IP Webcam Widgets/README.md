@@ -13,7 +13,7 @@
 
 	3-Click on "import widget". 
 
-	4-Select the file "Display_image.json" or "video_stream_.json", so click on import button. 
+	4-Select the file "Display_image.json" or "video_stream.json", so click on import button. 
 
 	5-Next, click  "edit widget" button at superior corner of widget, and go to "ADVANCED" tab.	
 
